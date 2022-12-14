@@ -15,19 +15,19 @@ if (oldpwd == NULL)
 simple_error();
 if (TINY[1])
 {
-if (*(TINY[1]) == '-' || (_strcmpr(TINY[1], "--") == 0))
-{
-if ((TINY[1][1] == '-' && TINY[1][2] == '\0') || TINY[1][1] == '\0')
-chdir_to_env(vars, "OLDPWD");
-else
-print_cd_1(vars);
-} else
-{
-if (stat(TINY[1], &dir) == 0 && S_ISDIR(ST) && ((ST & S_IXUSR) != 0))
-chdir(TINY[1]);
-else
-print_cd_2(vars);
-}
+	if (*(TINY[1]) == '-' || (_strcmpr(TINY[1], "--") == 0))
+	{
+		if ((TINY[1][1] == '-' && TINY[1][2] == '\0') || TINY[1][1] == '\0')
+			chdir_to_env(vars, "OLDPWD");
+		else
+			print_cd_1(vars);
+	} else
+	{
+		if (stat(TINY[1], &dir) == 0 && S_ISDIR(ST) && ((ST & S_IXUSR) != 0))
+			chdir(TINY[1]);
+		else
+			print_cd_2(vars);
+	}
 } else
 chdir_to_env(vars, "HOME");
 pwd = getcwd(pwd, 0);
