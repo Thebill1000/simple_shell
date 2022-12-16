@@ -169,4 +169,4 @@ char *integer_converter2(unsigned int count);
 unsigned int sig_flag;
 
 void print_message1(char *str);
-#endif /* _SHELL_MAIN_ */
+#endif /* _SHELL_H_ */
