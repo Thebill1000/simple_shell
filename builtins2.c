@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 #define TINY vars->array_tokens
 #define ST dir.st_mode
 /**

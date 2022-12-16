@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * make_enviroment - make the shell environment from the environment.
@@ -60,4 +60,3 @@ void chdir_to_env(vars_t *vars, char *str)
 	index = find_env_index(*vars, str);
 	chdir((vars->env[index]) + len + 1);
 }
-

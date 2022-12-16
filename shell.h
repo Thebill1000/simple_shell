@@ -1,5 +1,5 @@
-#ifndef _SHELL_MAIN_
-#define _SHELL_MAIN_
+#ifndef _SHELL_H_
+#define _SHELL_H_
 #define UNUSED(x) (void)(x)
 
 #include <stdio.h>
@@ -29,7 +29,7 @@ typedef struct history
 } history_t;
 
 /**fixing**/
-/**** Estructura con las posibles variables que vamos a usar ****/
+/**** structure with the possible variables we are going to use ****/
 
 /**
  * struct variables - variables
