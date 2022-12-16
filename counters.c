@@ -11,7 +11,8 @@ while (str[i])
 {
 if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
 state = 0;
-else if (state == 0)								{
+else if (state == 0)
+{
 state = 1;
 cw++;
 }
