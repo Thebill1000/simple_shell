@@ -1,4 +1,5 @@
-#include "main.h"
+#include "shell.h"
+
 /**
  * _puts_error - print a string to sdandart error
  * @str: string to print.
