@@ -183,4 +183,5 @@ struct list_path *next;
 } list_p;
 char *_which(char **commands, char **env);
 list_p *list_path(char **env);
+void free_list(list_p *head);
 #endif /* _SHELL_H_ */
