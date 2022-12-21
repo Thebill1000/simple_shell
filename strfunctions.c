@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 
 /***** RETURNS A POINTER TO A NEW STRING ******/
