@@ -191,7 +191,7 @@ void free_list(list_p *head);
  * @buf: .....
  * @size_t:.....
  */
-typedef struct info_t
+typedef struct info
 {
 char *buf;
 size_t *p;
