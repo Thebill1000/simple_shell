@@ -185,11 +185,6 @@ char *_which(char **commands, char **env);
 list_p *list_path(char **env);
 void free_list(list_p *head);
 
-int is_chain(info_t *info, char *buf, size_t *p);
-void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len);
-int replace_alias(info_t *info);
-int replace_vars(info_t *info);
-int replace_string(char **old, char *new);
 
 /**
  * struct info - .....
@@ -201,4 +196,9 @@ typedef struct info_t
 char *buf;
 size_t *p;
 } info_t;
+void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len);
+int is_chain(info_t *info, char *buf, size_t *p);
+int replace_vars(info_t *info)
+int replace_string(char **old, char *new);
+int replace_alias(info_t *info);
 #endif /* _SHELL_H_ */
