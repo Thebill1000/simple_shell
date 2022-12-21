@@ -181,4 +181,6 @@ typedef struct list_path
 char *dir;
 struct list_path *next;
 } list_p;
+char *_which(char **commands, char **env);
+list_p *list_path(char **env);
 #endif /* _SHELL_H_ */
